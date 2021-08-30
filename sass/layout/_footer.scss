@@ -1,0 +1,128 @@
+.footer {
+    background-color: #F3F3F3;
+    padding-top: 5.5rem;
+    padding-bottom: 6.5rem;
+    position: relative;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+
+
+
+
+    .logo_img {
+        width: 158px;
+        height: 77px;
+    }
+
+
+    &_list {
+        &_item {
+            &:not(:last-child) {
+                margin-bottom: 1.4rem;
+            }
+        }
+
+        &_link {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 21px;
+            color: $color-dark;
+            transition: .4s;
+
+            &:hover {
+                color: $color-orange;
+            }
+
+            &:active {
+                color: rgba(51, 51, 51, 0.7);
+            }
+
+
+
+        }
+    }
+
+    .time {
+        display: flex;
+
+        &::before {
+            @include baImages(16px, 16px, '../images/kalendar.svg');
+            margin-right: 14px;
+        }
+
+        &_text {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            color: $color-dark;
+        }
+    }
+
+    .address {
+        width: 20rem;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: $color-dark;
+
+
+        &_div {
+
+            display: flex;
+
+            &::before {
+                @include baImages(16px, 16px, '../images/house.svg');
+                margin-right: 14px;
+
+            }
+        }
+
+
+    }
+
+
+    .tell {
+
+
+        &_item {
+
+            &:first-child {
+                display: flex;
+
+                &::before {
+                    @include baImages(16px, 16px, '../images/phone.svg');
+                    margin-left: -30px;
+                    margin-right: 14px;
+
+                }
+            }
+        }
+
+        &_link {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            color: $color-dark;
+
+
+        }
+    }
+
+    .information {
+        position: absolute;
+        right: 10rem;
+        bottom: 2rem;
+        font-size: 14px;
+        line-height: 18px;
+        color: #5C5C5C;
+    }
+
+
+
+
+}

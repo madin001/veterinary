@@ -1,0 +1,239 @@
+.blog_main {
+
+    .blog_section {
+
+        .blog {
+            margin-left: 17.7rem;
+            padding-top: 11.8rem;
+            padding-bottom: 13.2rem;
+            background-image: url(../images/cissy.png);
+            background-repeat: no-repeat;
+            background-position: right 195px center;
+
+
+
+            .head__text {
+                width: 44.7rem;
+                margin-top: 2.2rem;
+            }
+        }
+
+    }
+
+    .article {
+        margin-bottom: 12.6rem;
+
+        .section_card {
+            border-radius: 5px;
+            background-color: #FEFEFE;
+            position: relative;
+            display: flex;
+
+
+
+
+            &::before {
+                @include baImages(558px, 525px, '../images/dogdog.png');
+
+            }
+
+            .article {
+                padding-right: 3rem;
+                padding-left: 8.1rem;
+                padding-top: 6.8rem;
+
+                .head__text {
+                    width: 51.7rem;
+                    margin-top: 2rem;
+                    margin-bottom: 4.8rem;
+
+                }
+
+
+
+
+
+                .needs {
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #3D9CEA;
+
+                    &_letter {
+                        &:not(:last-child) {
+                            margin-right: 8px;
+                        }
+                    }
+                }
+
+                .time {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+
+
+
+                    color: $color-text;
+                    position: absolute;
+                    top: 68px;
+                    right: 110px;
+
+                }
+
+                .title {
+                    font-size: 26px;
+                    line-height: 29px;
+                    color: $color-dark;
+                    margin-top: 3rem;
+                    width: 30rem;
+                }
+
+                .read_more {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: $color-dark;
+                    @include FlexAlignCenter;
+
+                    &:hover {
+                        color: $color-orange;
+                    }
+
+                    &::before {
+                        @include baImages(2.3rem, 2.1rem, '../images/pet.svg');
+
+                    }
+
+
+                }
+
+            }
+        }
+
+    }
+
+    .section_cards {
+        margin-left: auto;
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+
+
+            .card {
+                border-radius: 5px;
+                background-color: #FEFEFE;
+                width: 30.5rem;
+                margin-right: 3rem;
+                margin-bottom: 6rem;
+                margin-right: 3rem;
+
+
+                &:nth-child(4),
+                &:last-child {
+                    margin-right: 0;
+                }
+
+
+                &:first-child::before,
+                &:nth-child(4)::before {
+                    @include baImages(30.5rem, 18rem, '../images/catinteres.png');
+                }
+
+                &:nth-child(2)::before {
+                    @include baImages(30.5rem, 18rem, '../images/puppy.png');
+                }
+
+                &:nth-child(3)::before {
+                    @include baImages(30.5rem, 18rem, '../images/paradogs.png');
+                }
+
+                &:nth-child(5)::before {
+                    @include baImages(30.5rem, 18rem, '../images/koshka.png');
+                }
+
+                &:nth-child(6)::before {
+                    @include baImages(30.5rem, 18rem, '../images/rabbits.png');
+                }
+
+                &:nth-child(7)::before {
+                    @include baImages(30.5rem, 18rem, '../images/blackdog.png');
+                }
+
+                &:last-child::before {
+                    @include baImages(30.5rem, 18rem, '../images/browndog.png');
+                }
+
+                .in_card {
+                    padding: 2.1rem;
+                    position: relative;
+
+                    .time {
+                        position: absolute;
+                        right: 2.1rem;
+                        top: 2.1rem;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $color-text;
+
+                    }
+
+                    .read_more {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 21px;
+                        color: $color-dark;
+                        margin-top: 3.3rem;
+                        @include FlexAlignCenter;
+
+                        &:hover {
+                            color: $color-orange;
+                        }
+
+                        &::before {
+                            @include baImages(2.3rem, 2.1rem, '../images/pet.svg');
+
+                        }
+
+
+                    }
+                }
+
+
+
+                .title {
+                    width: 19rem;
+                    font-size: 22px;
+                    line-height: 25px;
+                    color: #000000;
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                }
+
+
+
+
+            }
+        }
+
+        .button_div {
+            margin-top: 5.6rem;
+            text-align: center;
+            margin-bottom: 15rem;
+
+            .btn {
+                @include FlexAlignCenter;
+                width: 24rem;
+                margin: 0 auto;
+
+                &::before {
+                    @include baImages(19px, 15px, '../images/zagruska.svg');
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+
+
+
+}

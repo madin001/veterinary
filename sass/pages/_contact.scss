@@ -1,0 +1,113 @@
+.contact_main {
+    background-image: url(../images/bg.png);
+    background-size: cover;
+
+    .section_contact {
+        padding-left: 17.6rem;
+        padding-top: 11.8rem;
+        padding-bottom: 11.7rem;
+        background-image: url(../images/uglydog.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+
+
+
+        .container {
+
+            .head__text {
+                width: 44.7rem;
+                margin-top: 2.7rem;
+                margin-bottom: 11.7rem;
+            }
+
+
+
+            .generall_box {
+                display: flex;
+
+
+                .address_box {
+
+
+                    &::before {
+                        @include baImages(73px, 73px, '../images/location.svg');
+                        margin-bottom: 3rem;
+                    }
+
+                    .address {
+                        width: 15.3rem;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 21px;
+                        color: $color-dark;
+                    }
+
+                }
+
+                .time {
+                    margin-left: 11.8rem;
+                    margin-right: 11.8rem;
+
+                    &::before {
+                        @include baImages(7.6rem, 7.2rem, '../images/calendar.svg');
+                        margin-bottom: 3rem;
+                    }
+
+                    &_text {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 21px;
+                        color: $color-dark;
+                    }
+
+
+                }
+
+                .tell {
+
+                    &::before {
+                        @include baImages(4.3rem, 7.6rem, '../images/tell.svg');
+                        margin-bottom: 2.7rem;
+                    }
+
+                    &_link {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 21px;
+                        color: $color-dark;
+                    }
+                }
+            }
+        }
+    }
+
+    .home_map {
+        background-image: url(../images/pets.png),
+            url(../images/Object.png);
+        background-repeat: no-repeat;
+        background-position: right 0 top 0, top 150px right 550px;
+        background-size: 934px 329px, 105px 105px;
+
+
+        &::before {
+            @include baImages(44.3rem, 34.2rem, '../images/lookingdog.png');
+            margin-left: 2.3rem;
+            position: relative;
+            bottom: -48px;
+
+
+
+        }
+
+        &_box {
+            display: flex;
+            margin-bottom: 20.6rem;
+
+            .iframe {
+                width: 847px;
+                height: 466px;
+            }
+        }
+    }
+}

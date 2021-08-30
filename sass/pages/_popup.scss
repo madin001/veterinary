@@ -1,0 +1,118 @@
+.body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .box {
+        background-image: url(../images/dalmatin.png), url(../images/orange_bg.png);
+        background-repeat: no-repeat;
+        background-size: 538px 524px, contain;
+        background-position: bottom left -44px, center;
+        width: 850px;
+        height: 648px;
+        padding-right: 40px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+
+        .iks {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border: none;
+            outline: none;
+            background: none;
+        }
+
+        &_heading {
+            width: 252px;
+            font-size: 50px;
+            line-height: 54px;
+            color: $color-dark;
+            margin-bottom: 2.8rem;
+        }
+
+        &_right {
+
+            .form {
+
+
+
+                .input {
+                    width: 37.5rem;
+                    padding: 1.6rem 2.2rem;
+                    font-size: 16px;
+                    line-height: 20px;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    margin-right: 2.1rem;
+                    display: block;
+                    margin-bottom: 1.4rem;
+                    color: $color-text;
+
+
+
+                    &::placeholder {
+                        font-size: 16px;
+                        line-height: 20px;
+                        // color: $color-text;
+                    }
+                }
+
+
+
+                .textarea {
+                    position: relative;
+                    font-size: 16px;
+                    line-height: 21px;
+                    resize: none;
+                    width: 37.5rem;
+                    height: 16.5rem;
+                    padding: 4rem 2.2rem;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+
+                    &::placeholder {
+
+                        font-size: 16px;
+                        line-height: 21px;
+                        color: #DBDBDB;
+
+                    }
+                }
+
+
+
+
+
+                .label {
+                    z-index: 2;
+                    display: block;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $color-text;
+                    position: absolute;
+                    margin-left: 2.2rem;
+                    margin-top: 1.6rem;
+
+
+
+                }
+
+                .btn {
+                    border: none;
+                    outline: none;
+                    display: block;
+                    margin-top: 3rem;
+                }
+            }
+        }
+
+
+    }
+}

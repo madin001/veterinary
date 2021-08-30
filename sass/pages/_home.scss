@@ -1,0 +1,556 @@
+.main {
+    background-image: url(../images/bg.png);
+    background-size: cover;
+
+
+    .section_intro {
+
+
+        background-image: url(../images/animals.png), url(../images/bird-bg.png);
+        background-repeat: no-repeat;
+        background-size: contain, 21rem 43rem;
+        background-position: left -15rem top -5rem, bottom right;
+        padding-top: 15.3rem;
+        padding-bottom: 31rem;
+
+        .left_box {
+            width: 60.8rem;
+            margin-left: auto;
+        }
+
+
+        .first__heading {
+            width: 60.8rem;
+            margin: 0;
+        }
+
+
+        .blue_heading {
+            color: $color-light-blue;
+        }
+
+
+        .head__text {
+            width: 49.5rem;
+            margin-top: 2.9rem;
+            margin-bottom: 3.8rem;
+        }
+    }
+
+
+
+    .blockquote_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .blockquote {
+            font-size: 20px;
+            line-height: 26px;
+            text-align: center;
+
+            color: $color-text;
+            text-align: center;
+            width: 85rem;
+            margin-top: 4.3rem;
+            margin-bottom: 3.5rem;
+            @include FlexAlignCenter;
+
+
+
+            &::before {
+                @include baImages(142px, 128px, '../images/znak.png');
+                margin-right: 5.5rem;
+            }
+
+            &::after {
+                @include baImages(148px, 78px, '../images/znak.png');
+                margin-left: 3.7rem;
+                transform: rotate(-180deg);
+            }
+
+        }
+
+        .dash {
+            width: 140px;
+            height: 1px;
+            background-color: #DBDBDB;
+            border: none;
+        }
+
+
+        .text_piece {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            color: $color-dark;
+            margin-top: 3.5rem;
+        }
+    }
+
+    .section_service {
+        margin-bottom: 23.5em;
+
+
+        .secondary__heading {
+            text-align: center;
+            margin-top: 19rem;
+            margin-bottom: 8rem;
+        }
+
+        .service_top {
+            @include FlexAlignCenter;
+
+
+            .button__strelka {
+                display: inline-block;
+                background: none;
+                outline: none;
+                border: none;
+                padding: 1.2rem 1.8rem;
+
+
+
+                &:hover {
+                    background-color: $color-white;
+                }
+
+                &:active {
+                    background-color: rgba(255, 255, 255, .6);
+                }
+
+                .strelka__right {
+                    transform: rotate(180deg);
+                }
+
+            }
+
+
+            .service {
+                display: flex;
+                // margin-left: 1.2rem;
+                // margin-right: 1.2rem;
+                margin-left: auto;
+
+                &_item {
+                    &:not(:last-child) {
+                        margin-right: 1.3rem;
+                    }
+
+                    &:first-child .service_link::before {
+                        @include baImages(5.4rem, 7.7rem, '../images/doctor.svg');
+
+                    }
+
+                    &:nth-child(2) .service_link::before {
+                        @include baImages(5.2rem, 7.7rem, '../images/girl.svg');
+
+                    }
+
+                    &:nth-child(3) .service_link::before {
+                        @include baImages(7.2rem, 7.7rem, '../images/dog.svg');
+
+
+                    }
+
+                    &:nth-child(4) .service_link::before {
+                        @include baImages(7.6rem, 7.6rem, '../images/filledoutline4.svg');
+
+                    }
+
+                    &:nth-child(5) .service_link::before {
+                        @include baImages(7.8rem, 7.8rem, '../images/microscope.svg');
+
+                    }
+
+                    &:last-child .service_link::before {
+                        @include baImages(7.6rem, 7.6rem, '../images/dogcat.svg');
+
+                    }
+
+                    &:first-child .service_link {
+                        height: 21.5rem;
+                        border-radius: 5px 5px 0px 0px
+                    }
+
+
+                }
+
+                &_link {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: $color-dark;
+                    text-align: center;
+                    width: 19.3rem;
+                    height: 20.1rem;
+                    background-color: $color-white;
+                    border-radius: 5px;
+
+                    &:hover {
+                        opacity: .8;
+                    }
+
+                    &:active {
+                        opacity: .6;
+                    }
+
+                    &::before {
+                        margin-bottom: 2.2rem;
+                    }
+
+
+
+                }
+            }
+        }
+
+        .service_bottom {
+            @include FlexAlignCenter;
+            padding: 4.1rem 0 4.1rem 3.5rem;
+            background-color: $color-white;
+            width: 122.3rem;
+            margin: 0 auto;
+
+
+            &::before {
+                @include baImages(59rem, 33.2rem, '../images/catlupa.png');
+                margin-right: 6.7rem;
+            }
+
+            &_right {
+                .third__heading {
+                    font-weight: 500;
+                    font-size: 36px;
+                    line-height: 20px;
+                    color: $color-dark;
+                    margin-bottom: 1.8rem;
+                }
+
+                .head__text {
+                    width: 49.2rem;
+
+                }
+
+                .buttons {
+                    display: flex;
+                    margin-top: 3.4rem;
+
+
+                    .btn {
+                        @include FlexAlignCenter;
+
+                        &:not(:last-child) {
+                            margin-right: 2.1rem;
+                        }
+
+                        &:first-child::before {
+                            @include baImages(2.1rem, 2.1rem, '../images/price.svg');
+                            margin-right: 6px;
+                        }
+
+                        &:last-child::before {
+                            @include baImages(2.1rem, 2.1rem, '../images/document.svg');
+                            margin-right: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section_join {
+
+        background-image: url(../images/bluepet_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 9rem;
+        position: relative;
+
+        .div {
+            margin-left: 19.7rem;
+        }
+
+        &::after {
+            @include baImages(61.3rem, 48.1rem, '../images/dog_bg.png');
+            position: absolute;
+            right: 6rem;
+            top: -9.3rem;
+
+        }
+
+        .secondary__heading {
+            margin-bottom: 3.2rem;
+        }
+
+        input[type='email'] {
+            width: 33.5rem;
+            padding: 1.8rem 2.2rem;
+            font-size: 16px;
+            line-height: 20px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 2.1rem;
+
+
+
+            &::placeholder {
+                font-size: 16px;
+                line-height: 20px;
+                color: $color-text;
+            }
+        }
+    }
+
+    .section_article {
+        margin-top: 21.6rem;
+        margin-bottom: 26.5rem;
+
+
+        .secondary__heading {
+            text-align: center;
+            margin-bottom: 8rem;
+        }
+
+
+        &_cards {
+            @include FlexAlignCenter;
+
+            .time {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+                color: $color-text;
+
+            }
+
+
+            .read_more {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 21px;
+                color: $color-dark;
+                margin-top: 3.3rem;
+                @include FlexAlignCenter;
+
+                &::before {
+                    @include baImages(2.3rem, 2.1rem, '../images/pet.svg');
+
+                }
+
+
+            }
+
+            .card {
+                border-radius: 5px;
+                background-color: #FEFEFE;
+                width: 30.5rem;
+
+                &:first-child::before {
+                    @include baImages(30.5rem, 18rem, '../images/catinteres.png')
+                }
+
+                &:last-child::before {
+                    @include baImages(30.5rem, 18rem, '../images/puppy.png')
+                }
+
+                .in_card {
+                    padding: 2.1rem;
+                    position: relative;
+
+                    .time {
+                        position: absolute;
+                        right: 2.1rem;
+                        top: 2.1rem;
+                    }
+                }
+
+
+
+                .title {
+                    width: 18.5rem;
+                    font-size: 22px;
+                    line-height: 25px;
+                    color: #000000;
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .middle_card {
+                border-radius: 5px;
+                padding-right: 3rem;
+                background-color: #FEFEFE;
+                @include FlexAlignCenter;
+
+                width: 64rem;
+                min-height: 43.5rem;
+                margin-left: 2.4rem;
+                margin-right: 2.4rem;
+
+                &::before {
+                    @include baImages(305px, 435px, '../images/twodogs.png');
+                }
+
+                .head__text {
+                    width: 27rem;
+                }
+
+                .in_middle_card {
+                    padding-left: 3.2rem;
+                    position: relative;
+
+
+                    .needs {
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #3D9CEA;
+
+                        &_letter {
+                            &:not(:last-child) {
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+
+                    .time {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+
+                    }
+
+                    .title {
+                        font-size: 26px;
+                        line-height: 29px;
+                        color: $color-dark;
+
+                        margin-top: 3rem;
+                        margin-bottom: 1.5rem;
+                        width: 20rem;
+                    }
+                }
+            }
+
+
+
+
+
+
+
+
+        }
+    }
+
+
+    .section_map {
+        @include FlexAlignCenter;
+        padding-bottom: 24.7rem;
+
+
+
+
+        .iframe_map {
+            width: 46.2rem;
+            height: 63.2rem;
+        }
+
+        &_right {
+            width: 100%;
+            height: 63.2rem;
+            background-color: $color-dark;
+            background-image: url(../images/fish_bg.png);
+            background-size: 96.7rem 62.4rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-top: 6.2rem;
+            padding-left: 16.6rem;
+            padding-bottom: 7.4rem;
+
+
+            .head__text {
+                width: 33.4rem;
+                margin-top: 1.5rem;
+                margin-bottom: 3rem;
+            }
+
+
+            .input {
+                width: 37.5rem;
+                padding: 1.6rem 2.2rem;
+                font-size: 16px;
+                line-height: 20px;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                margin-right: 2.1rem;
+                display: block;
+                margin-bottom: 1.4rem;
+
+
+
+                &::placeholder {
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $color-text;
+                }
+            }
+
+
+
+            .textarea {
+                position: relative;
+                font-size: 16px;
+                line-height: 21px;
+                resize: none;
+                width: 37.5rem;
+                height: 16.5rem;
+                padding: 4rem 10rem 4rem 2.2rem;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+
+                &::placeholder {
+
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #DBDBDB;
+
+                }
+            }
+
+
+
+
+
+            .label {
+                z-index: 2;
+                display: block;
+                font-size: 16px;
+                line-height: 20px;
+                color: $color-text;
+                position: absolute;
+                margin-left: 2.2rem;
+                margin-top: 1.6rem;
+
+
+
+            }
+
+            .btn {
+                border: none;
+                outline: none;
+                display: block;
+                margin-top: 3rem;
+            }
+
+
+
+
+        }
+    }
+}

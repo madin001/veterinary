@@ -1,0 +1,39 @@
+.first__heading {
+    font-weight: bold;
+    font-size: 7rem;
+    line-height: 6.4rem;
+    color: $color-dark;
+}
+
+.secondary__heading {
+    font-size: 48px;
+    line-height: 54px;
+
+
+    &__dar {
+        color: $color-dark;
+    }
+
+    &__white {
+        color: $color-white;
+    }
+
+}
+
+
+
+.head__text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-text;
+
+
+}
+
+.complete__heading {
+    font-size: 70px;
+    line-height: 64px;
+
+    color: $color-dark;
+}

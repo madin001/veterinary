@@ -1,0 +1,311 @@
+.faq_main {
+    background-image: url(../images/bg.png);
+    background-size: cover;
+
+
+    .faq_section {
+        padding-left: 17.7rem;
+        position: relative;
+
+        .faq_top {
+            padding-top: 11.8rem;
+            padding-bottom: 6.2rem;
+            background-image: url(../images/medicinecat.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+
+
+
+            .head__text {
+                width: 44.7rem;
+                margin-top: 2.7rem;
+                margin-bottom: 3.5rem;
+            }
+
+            .btn {
+
+                @include FlexAlignCenter;
+                text-align: center;
+                border: none;
+                outline: none;
+
+
+                &::before {
+                    @include baImages(2.1rem, 2.1rem, '../images/document.svg');
+                    margin-right: 6px;
+
+                }
+            }
+
+        }
+
+        .faq_bottom {
+            margin-bottom: 6.1rem;
+            padding-bottom: 20.9rem;
+            background-image: url(../images/lovebir_bg.png);
+            background-repeat: no-repeat;
+            background-size: 534px 640px;
+            background-position: bottom 10px right;
+
+            .article {
+                min-height: 12.9rem;
+                width: 75.2rem;
+                padding: 23px 41px 44px 63px;
+                background-color: $color-white;
+                border-radius: 5px;
+
+                &:nth-child(odd) .time {
+
+                    &::before {
+                        @include baImages(23px, 20px, '../images/pet_orange.svg');
+                    }
+
+                }
+
+                &:nth-child(even) .time {
+                    &::before {
+                        @include baImages(23px, 20px, '../images/pet_blue.svg');
+                    }
+
+                }
+
+                &:nth-child(3n) {
+                    opacity: .5;
+                }
+
+                &:first-child .strelka {
+                    transform: rotate(90deg);
+                }
+
+
+                &:not(:last-child) {
+                    margin-bottom: 1.8rem;
+                }
+
+                &_top {
+                    @include FlexAlignCenter;
+                    margin-bottom: 13px;
+
+                    .time {
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: $color-dark;
+                        @include FlexAlignCenter;
+
+                    }
+
+                    .blue_text {
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 22px;
+
+
+                        text-align: right;
+                        letter-spacing: 0.08em;
+                        text-transform: uppercase;
+                        color: $color-light-blue;
+                        margin-left: 2.8rem;
+                    }
+                }
+
+                &_middle {
+                    @include FlexAlignCenter;
+                    justify-content: space-between;
+
+                    .title {
+                        width: 59rem;
+                        font-size: 20px;
+                        line-height: 22px;
+                        color: $color-dark;
+                    }
+
+                    .strelka {
+                        border: none;
+                        outline: none;
+                        background: none;
+                        transform: rotate(-90deg);
+                    }
+
+                    .clock {
+                        border: none;
+                        outline: none;
+                        background: none;
+                    }
+                }
+
+
+            }
+        }
+
+
+
+    }
+
+
+
+    .modal {
+        display: none;
+        margin: 0 auto;
+        position: absolute;
+        top: 500px;
+        left: calc(50% - 425px);
+        background-image: url(../images/dogwithtel.png), url(../images/orange_bg.png);
+        background-repeat: no-repeat;
+        background-size: 350px 324px, contain;
+        background-position: bottom left, center;
+        width: 850px;
+        height: 648px;
+
+
+
+        .iks {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border: none;
+            outline: none;
+            background: none;
+        }
+
+        &_heading {
+            font-size: 50px;
+            line-height: 54px;
+            color: $color-dark;
+            margin-bottom: 2.8rem;
+        }
+
+        &_box {
+            padding-top: 11.9rem;
+            padding-right: 5rem;
+            padding-left: 5rem;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        &_left {
+            margin-top: 2.9rem;
+
+            .content {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                color: $color-dark;
+            }
+
+            .links {
+                .link {
+                    margin-top: 2.1rem;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: $color-dark;
+                    padding: 15px 22px;
+                    text-align: center;
+                    // width: 238px;
+                    height: 50px;
+                    background-color: $color-white;
+                    @include FlexAlignCenter;
+
+                    &:first-child::before {
+                        @include baImages(20px, 20px, '../images/google.png');
+                        margin-right: 1.4rem;
+                    }
+
+                    &:last-child::before {
+                        @include baImages(20px, 20px, '../images/facebook.png');
+                        margin-right: 1.4rem;
+
+
+                    }
+                }
+            }
+        }
+
+        &_right {
+
+            .form {
+
+
+
+                .input {
+
+                    width: 37.5rem;
+                    padding: 1.6rem 2.2rem;
+                    font-size: 16px;
+                    line-height: 20px;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    margin-right: 2.1rem;
+                    display: block;
+                    margin-bottom: 1.4rem;
+                    color: $color-text;
+
+
+
+                    &::placeholder {
+                        font-size: 16px;
+                        line-height: 20px;
+                        // color: $color-text;
+                    }
+                }
+
+
+
+                .textarea {
+                    position: relative;
+                    font-size: 16px;
+                    line-height: 21px;
+                    resize: none;
+                    width: 37.5rem;
+                    height: 16.5rem;
+                    padding: 4rem 9rem 4rem 2.2rem;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+
+                    &::placeholder {
+
+                        font-size: 16px;
+                        line-height: 21px;
+                        color: #DBDBDB;
+
+                    }
+                }
+
+
+
+
+
+                .label {
+                    z-index: 2;
+                    display: block;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $color-text;
+                    position: absolute;
+                    margin-left: 2.2rem;
+                    margin-top: 1.6rem;
+
+
+
+                }
+
+                .btn {
+                    border: none;
+                    outline: none;
+                    display: block;
+                    margin-top: 3rem;
+                }
+            }
+        }
+
+
+    }
+
+    .modal_activ {
+        display: block;
+    }
+}

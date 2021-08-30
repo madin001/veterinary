@@ -1,0 +1,283 @@
+.inspaction_main {
+
+    .section_inspaction {
+        .rexs_img {
+            width: 100%;
+        }
+
+
+
+
+        .inspaction {
+
+            margin-top: 3.3rem;
+
+            .container {
+                display: flex;
+            }
+
+            .left {
+                margin-left: 17.7rem;
+
+                .list {
+                    display: flex;
+                    margin-bottom: 3.3rem;
+
+                    &_item {
+                        @include FlexAlignCenter;
+
+                        &:not(:first-child)::before {
+                            @include baElements(3px, 3px);
+                            background-color: $color-orange;
+                            border-radius: 50%;
+                            margin-left: 8px;
+                            margin-right: 8px;
+                        }
+
+                        &:last-child .list_link {
+                            color: $color-dark;
+                        }
+                    }
+
+                    &_link {
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $color-text;
+                    }
+                }
+
+                .title {
+                    font-size: 70px;
+                    line-height: 64px;
+                    color: $color-dark;
+
+                    .orange {
+                        color: $color-orange;
+                    }
+                }
+
+                .text {
+                    width: 74rem;
+                    margin-top: 2.8rem;
+                    margin-bottom: 6.4rem;
+
+                    .head__text {
+                        &:not(:last-child) {
+                            margin-bottom: 2.3rem;
+
+                        }
+                    }
+
+                }
+
+                .buttons {
+                    display: flex;
+                    margin-top: 3.4rem;
+
+
+                    .btn {
+                        @include FlexAlignCenter;
+
+                        &:not(:last-child) {
+                            margin-right: 2.1rem;
+                        }
+
+                        &:first-child::before {
+                            @include baImages(2.1rem, 2.1rem, '../images/price.svg');
+                            margin-right: 6px;
+                        }
+
+                        &:last-child::before {
+                            @include baImages(2.1rem, 2.1rem, '../images/document.svg');
+                            margin-right: 6px;
+                        }
+                    }
+                }
+
+            }
+
+            .right {
+                margin-left: auto;
+
+                .card {
+                    border-radius: 5px;
+                    background-color: #FEFEFE;
+                    width: 30.5rem;
+
+                    &:first-child {
+                        margin-bottom: 1.1rem;
+                    }
+
+                    &:first-child::before {
+                        @include baImages(30.5rem, 18rem, '../images/catinteres.png')
+                    }
+
+                    &:last-child::before {
+                        @include baImages(30.5rem, 18rem, '../images/puppy.png')
+                    }
+
+                    .in_card {
+                        padding: 2.1rem;
+                        position: relative;
+
+                        .time {
+                            position: absolute;
+                            right: 2.1rem;
+                            top: 2.1rem;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: $color-text;
+
+                        }
+
+                        .read_more {
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 21px;
+                            color: $color-dark;
+                            margin-top: 3.3rem;
+                            @include FlexAlignCenter;
+
+                            &::before {
+                                @include baImages(2.3rem, 2.1rem, '../images/pet.svg');
+
+                            }
+
+
+                        }
+                    }
+
+
+
+                    .title {
+                        width: 18.5rem;
+                        font-size: 22px;
+                        line-height: 25px;
+                        color: #000000;
+                        margin-top: 2rem;
+                        margin-bottom: 1rem;
+                    }
+
+
+
+                }
+            }
+
+
+        }
+    }
+
+    .section_question {
+        margin-top: 7.4rem;
+        margin-bottom: 18.7rem;
+        position: relative;
+        width: 100%;
+        min-height: 49.8rem;
+        padding: 6.5rem 0;
+        background-image: url(../images/bluepet_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include FlexAlignCenter;
+
+        &::after {
+            @include baImages(811px, 636px, '../images/dog_bg.png');
+            position: absolute;
+            right: -106px;
+            bottom: -86px;
+            z-index: 2;
+        }
+
+
+
+
+
+        .left_box {
+            margin-left: 17.7rem;
+            margin-right: 6.1rem;
+
+            .secondary__heading {
+                width: 30rem;
+                margin-bottom: 8px;
+            }
+
+            .link_question {
+                font-weight: 500;
+                font-size: 26px;
+                line-height: 30px;
+                color: $color-white;
+            }
+        }
+
+        .form {
+            .input {
+                width: 37.5rem;
+                padding: 1.6rem 2.2rem;
+                font-size: 16px;
+                line-height: 20px;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                margin-right: 2.1rem;
+                display: block;
+                margin-bottom: 1.4rem;
+
+
+
+                &::placeholder {
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $color-text;
+                }
+            }
+
+
+
+            .textarea {
+                position: relative;
+                font-size: 16px;
+                line-height: 21px;
+                resize: none;
+                width: 37.5rem;
+                height: 16.5rem;
+                padding: 4rem 2.2rem;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+
+                &::placeholder {
+
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #DBDBDB;
+
+                }
+            }
+
+
+
+
+
+            .label {
+                z-index: 2;
+                display: block;
+                font-size: 16px;
+                line-height: 20px;
+                color: $color-text;
+                position: absolute;
+                margin-left: 2.2rem;
+                margin-top: 1.6rem;
+
+
+
+            }
+
+            .btn {
+                border: none;
+                outline: none;
+                display: block;
+                margin-top: 3rem;
+            }
+        }
+    }
+}

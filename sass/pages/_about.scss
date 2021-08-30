@@ -1,0 +1,160 @@
+.about_main {
+    background-image: url(../images/bg.png);
+    background-size: cover;
+
+    .about_section {
+
+
+
+        .about {
+
+
+            padding-top: 11.8rem;
+            min-height: 55.3rem;
+            background-image: url(../images/woman.png), url(../images/pets.png), url(../images/Objectblue.png);
+            background-repeat: no-repeat;
+            background-size: contain, 670px 236px, 112px 112px;
+            background-position: right, left 77px bottom 20px, left 510px bottom 30px;
+            padding-left: 17.7rem;
+
+
+            .head__text {
+                width: 42rem;
+                margin-top: 2.2rem;
+            }
+        }
+
+        .home {
+            background-color: $color-white;
+            @include FlexAlignCenter;
+
+            &_img {
+                width: 705px;
+                height: 449px;
+
+            }
+
+            .paragrof {
+                margin-left: 11.2rem;
+                width: 55.7rem;
+                font-size: 20px;
+                line-height: 26px;
+                color: $color-text;
+
+                .orange_text {
+                    color: $color-orange;
+                }
+            }
+
+        }
+
+        .puppy {
+            padding-left: 17.7rem;
+            @include FlexAlignCenter;
+
+            &::after {
+                @include baImages(797px, 593px, '../images/dog-wash.png');
+            }
+
+            .head__text {
+                width: 49.5rem;
+
+                &:not(:last-child) {
+                    margin-bottom: 1.9rem;
+                }
+
+                .blue_text {
+                    color: $color-light-blue;
+                }
+            }
+        }
+
+        .how_do_you_want {
+            padding-left: 17.7rem;
+            margin-bottom: 14.5rem;
+
+            @include FlexAlignCenter;
+
+
+            .left {
+
+                .secondary__heading {
+                    width: 50rem;
+
+                    .orange {
+                        color: $color-orange;
+                    }
+                }
+
+                .head__text {
+                    width: 35rem;
+                    margin-top: 2.4rem;
+                    margin-bottom: 8.8rem;
+                }
+
+                .fivetoone {
+                    display: flex;
+
+                    .strelka {
+                        border: none;
+                        outline: none;
+                        background: none;
+                        padding: 12px 18px;
+
+                        &:hover {
+                            background-color: $color-white;
+                        }
+
+                        &_left {
+                            transform: rotate(180deg);
+                            margin-left: 6.4rem;
+                            margin-right: 7.5rem;
+                        }
+                    }
+
+                    .pricefive {
+                        .one {
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 22px;
+                            color: $color-dark;
+                        }
+
+                        .dush {
+                            width: 38.6px;
+                            height: 1px;
+
+                            border: none;
+                            background-color: $color-dark;
+
+
+
+                            transform: rotate(126.57deg);
+
+                        }
+
+                        .five {
+                            margin-left: 30px;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: $color-text;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                display: flex;
+                margin-left: 2rem;
+
+                .dogs {
+                    &:not(:last-child) {
+                        margin-right: 2rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

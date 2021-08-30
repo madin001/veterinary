@@ -1,0 +1,43 @@
+.btn {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    border-radius: 3px;
+    padding: 15px 5rem;
+    text-align: center;
+
+
+    &__dark {
+        color: $color-white;
+        background-color: $color-dark;
+
+        &:hover {
+            color: $color-dark;
+            background-color: $color-orange;
+
+        }
+    }
+
+    &__orange {
+        color: $color-white;
+        background-color: $color-orange;
+
+        &:hover {
+            color: $color-orange;
+            background-color: $color-dark;
+        }
+    }
+
+    &__blue {
+        color: $color-white;
+        background-color: $color-light-blue;
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-dark;
+
+        }
+    }
+
+}
